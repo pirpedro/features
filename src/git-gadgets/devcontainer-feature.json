@@ -1,0 +1,11 @@
+{
+  "id": "git-gadgets",
+  "version": "1.0.0",
+  "name": "Git Gadgets",
+  "description": "Installs Git and various Git-related tools, including ssh-agent for Git over SSH.",
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils",
+    "ghcr.io/devcontainers/features/git"
+  ],
+  "postCreateCommand": "mkdir -p ~/.ssh && chmod 700 ~/.ssh && [ -f ~/.ssh/known_hosts ] && chmod 644 ~/.ssh/known_hosts || true"
+}

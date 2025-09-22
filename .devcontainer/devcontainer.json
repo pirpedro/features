@@ -1,25 +1,33 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
-    "customizations": {
-        "vscode": {
-            "settings": {
-                "json.schemas": [
-                    {
-                        "fileMatch": [
-                            "*/devcontainer-feature.json"
-                        ],
-                        "url": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json"
-                    }
-                ]
-            },
-            "extensions": [
-                "mads-hartmann.bash-ide-vscode"
-            ]
-        }
-    },
-    "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-    },
-    "remoteUser": "node",
-    "updateContentCommand": "npm install -g @devcontainers/cli"
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bookworm",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "json.schemas": [
+          {
+            "fileMatch": ["*/devcontainer-feature.json"],
+            "url": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainerFeature.schema.json"
+          }
+        ]
+      },
+      "extensions": [
+        "mads-hartmann.bash-ide-vscode",
+        "bierner.markdown-preview-github-styles"
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "mounts": [
+    "source=${localEnv:SSH_AUTH_SOCK},target=/ssh-agent,type=bind",
+    "source=${localEnv:HOME}/.config/git/config,target=/home/node/.gitconfig,type=bind",
+    "source=${localEnv:HOME}/.ssh/known_hosts,target=/home/node/.ssh/known_hosts,type=bind"
+  ],
+  "remoteEnv": {
+    "SSH_AUTH_SOCK": "/ssh-agent"
+  },
+  "remoteUser": "node",
+  "updateContentCommand": "npm install -g @devcontainers/cli",
+  "postCreateCommand": "mkdir -p ~/.ssh && chmod 700 ~/.ssh && [ -f ~/.ssh/known_hosts ] && chmod 644 ~/.ssh/known_hosts || true"
 }

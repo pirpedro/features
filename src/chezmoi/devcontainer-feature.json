@@ -1,0 +1,32 @@
+{
+  "id": "chezmoi",
+  "version": "1.0.0",
+  "name": "chezmoi (dotfiles manager)",
+  "description": "Installs chezmoi and optionally initializes dotfiles for the target user from a git repository.",
+  "options": {
+    "repoUrl": {
+      "type": "string",
+      "default": "",
+      "description": "Git URL for dotfiles (e.g., https://github.com/user/dots or git@github.com:user/dots.git). Empty = do not init."
+    },
+    "branch": {
+      "type": "string",
+      "default": "",
+      "description": "Branch to checkout (optional)."
+    },
+    "apply": {
+      "type": "boolean",
+      "default": true,
+      "description": "Run `chezmoi init --apply` if repoUrl is set."
+    },
+    "useLoginShell": {
+      "type": "boolean",
+      "default": true,
+      "description": "Execute init/apply in a login shell for the target user (safer PATH/XDG)."
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils",
+    "ghcr.io/devcontainers/features/git"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "antidote",
+  "version": "1.0.0",
+  "name": "Antidote (Zsh plugins)",
+  "description": "Installs Antidote and wires it into the target user's Zsh.",
+  "options": {
+    "setAsDefaultShell": {
+      "type": "boolean",
+      "default": true,
+      "description": "Set zsh as default shell for the remote user"
+    }
+  },
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils",
+    "ghcr.io/devcontainers/features/git"
+  ]
+}

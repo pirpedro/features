@@ -34,8 +34,9 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - antidote
+          - chezmoi
+          - git-gadgets
     steps:
       - uses: actions/checkout@v4
 

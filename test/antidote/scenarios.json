@@ -1,0 +1,41 @@
+{
+  "ubuntu": {
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "ghcr.io/devcontainers/features/common-utils:2": {
+        "username": "vscode",
+        "installZsh": "true",
+        "updateRemoteUserUID": "false"
+      },
+      "ghcr.io/devcontainers/features/git:1": {},
+      "antidote": { "setAsDefaultShell": true }
+    },
+    "remoteUser": "vscode"
+  },
+  "debian": {
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+      "ghcr.io/devcontainers/features/common-utils:2": {
+        "username": "vscode",
+        "installZsh": "true",
+        "updateRemoteUserUID": "false"
+      },
+      "ghcr.io/devcontainers/features/git:1": {},
+      "antidote": { "setAsDefaultShell": true }
+    },
+    "remoteUser": "vscode"
+  },
+  "alpine": {
+    "image": "mcr.microsoft.com/devcontainers/base:alpine",
+    "features": {
+      "ghcr.io/devcontainers/features/common-utils:2": {
+        "username": "vscode",
+        "installZsh": "true",
+        "updateRemoteUserUID": "false"
+      },
+      "ghcr.io/devcontainers/features/git:1": {},
+      "antidote": { "setAsDefaultShell": true }
+    },
+    "remoteUser": "vscode"
+  }
+}
