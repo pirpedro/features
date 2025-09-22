@@ -92,21 +92,6 @@ Essential Git utilities and SSH client setup for seamless repository management 
 
 **Dependencies:** Requires `common-utils` and `git` features.
 
-### 🎨 `color` - Terminal Color Testing
-
-A simple utility for testing terminal color capabilities and preferences.
-
-```jsonc
-{
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {
-    "ghcr.io/pirpedro/features/color:1": {
-      "favorite": "green"
-    }
-  }
-}
-```
-
 ## 🏗️ Complete Development Setup
 
 For the ultimate development environment, combine all features:
@@ -157,14 +142,6 @@ This repository follows the standard [dev container Features distribution specif
 │   ├── git-gadgets/           # Git workflow enhancements
 │   │   ├── devcontainer-feature.json
 │   │   └── install.sh
-│   ├── color/                 # Terminal color testing
-│   │   ├── devcontainer-feature.json
-│   │   ├── install.sh
-│   │   └── README.md
-│   └── hello/                 # Example feature
-│       ├── devcontainer-feature.json
-│       ├── install.sh
-│       └── README.md
 ├── test/                      # Feature testing
 │   ├── antidote/
 │   ├── chezmoi/
@@ -245,7 +222,6 @@ Features are automatically published to GitHub Container Registry (GHCR) and can
 | `antidote`    | Zsh plugin manager  | Fast shell, autosuggestions, syntax highlighting |
 | `chezmoi`     | Dotfiles management | Consistent dev environments, automated setup     |
 | `git-gadgets` | Git workflow tools  | SSH support, enhanced Git functionality          |
-| `color`       | Terminal testing    | Color capability validation                      |
 
 ### 🔄 Versioning & Updates
 

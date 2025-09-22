@@ -13,8 +13,9 @@ jobs:
     strategy:
       matrix:
         features:
-          - color
-          - hello
+          - antidote
+          - chezmoi
+          - git-gadgets
         baseImage:
           - debian:latest
           - ubuntu:latest
