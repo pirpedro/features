@@ -12,7 +12,8 @@
       },
       "extensions": [
         "mads-hartmann.bash-ide-vscode",
-        "bierner.markdown-preview-github-styles"
+        "bierner.markdown-preview-github-styles",
+        "nefrob.vscode-just-syntax"
       ]
     }
   },
