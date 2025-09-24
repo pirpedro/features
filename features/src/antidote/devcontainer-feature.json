@@ -1,8 +1,9 @@
 {
   "id": "antidote",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Antidote (Zsh plugins)",
   "description": "Installs Antidote and wires it into the target user's Zsh.",
+  "documentationURL": "https://github.com/pirpedro/devcontainers/tree/main/features/src/antidote",
   "options": {
     "setAsDefaultShell": {
       "type": "boolean",

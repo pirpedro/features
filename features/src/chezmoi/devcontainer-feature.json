@@ -1,8 +1,9 @@
 {
   "id": "chezmoi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "chezmoi (dotfiles manager)",
   "description": "Installs chezmoi and optionally initializes dotfiles for the target user from a git repository.",
+  "documentationURL": "https://github.com/pirpedro/devcontainers/tree/main/features/src/chezmoi",
   "options": {
     "repoUrl": {
       "type": "string",

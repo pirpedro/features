@@ -1,7 +1,7 @@
 {
-  "id": "git-gadgets",
-  "version": "1.0.0",
-  "name": "Git Gadgets",
+  "id": "dev-gadgets",
+  "version": "1.0.1",
+  "name": "Dev Gadgets",
   "description": "Installs Git and various Git-related tools, including ssh-agent for Git over SSH.",
   "installsAfter": [
     "ghcr.io/devcontainers/features/common-utils",
