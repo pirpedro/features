@@ -1,4 +1,4 @@
-name: "CI - Test Features"
+name: 'CI - Test Features'
 on:
   push:
     branches:
@@ -41,7 +41,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: "Install latest devcontainer CLI"
+      - name: 'Install latest devcontainer CLI'
         run: npm install -g @devcontainers/cli
 
       - name: "Generating tests for '${{ matrix.features }}' scenarios"
@@ -53,8 +53,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: "Install latest devcontainer CLI"
+      - name: 'Install latest devcontainer CLI'
         run: npm install -g @devcontainers/cli
 
-      - name: "Testing global scenarios"
-        run: devcontainer features test --global-scenarios-only --project-folder ./features
+      - name: 'Testing global scenarios'
+        run: devcontainer features test --global-scenarios-only
