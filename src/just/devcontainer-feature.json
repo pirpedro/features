@@ -1,0 +1,21 @@
+{
+  "id": "just",
+  "version": "1.0.0",
+  "name": "Just",
+  "description": "Installs Just, a command runner similar to Make",
+  "installsAfter": [
+    "ghcr.io/devcontainers/features/common-utils"
+  ],
+  "options": {
+    "justfile": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether to import a complete justfile from github.com/pirpedro/dev-gadgets/templates/base/Justfile. Use in your project with import? \"~/.config/just/Justfile\""
+    },
+    "destination": {
+      "type": "string",
+      "default": "~/.local/bin",
+      "description": "The destination path to install just binary"
+    }
+  }
+}
